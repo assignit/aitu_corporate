@@ -8,23 +8,9 @@ task :haml_layouts do
   puts "done."
 end
 
-desc "Compile Bootstrap Less"
-task :bootstrap do
-  require 'less'
-  input  = File.join( "bootstrap_less", "bootstrap.less" )
-  output = File.join( "css", "bootstrap.css" )
-  path = input #File.join(".","css")
-  source = File.open( input, "r" ).read
-  parser = Less::Parser.new( :paths => [File.dirname(path)] )
-  tree = parser.parse( source )
-
-  File.open( output, "w+" ) do |f|
-    f.puts tree.to_css( :compress => true )
-  end
-end 
 
 task :clean do
-  system "rm -rf _site"
+  system "rm -rf _site/*"
 end
 
 #desc "synchronize with S3"
@@ -37,6 +23,17 @@ task :preview => [:haml_layouts, :bootstrap, :clean] do
   system "jekyll --auto --server"
 end
 
+desc "Move web site to local server"
+task :move do
+  # Clean the local webserver folder - make sure permissions have been set to 777
+  system "rm -rf /Library/WebServer/Documents/aitu_corporate_site/*"  
+  system "cp -R _site/ /Library/WebServer/Documents/aitu_corporate_site/"
+  
+end
+
+
+
+
 desc "Build site"
 task :build => [:haml_layouts,  :clean] do |task, args|
   system "jekyll build"
@@ -46,6 +43,10 @@ end
 
 
 
+desc "Build site and move to local server"
+task :build_and_move => [:build, :move] do |task, args|
+
+end
 
 
 

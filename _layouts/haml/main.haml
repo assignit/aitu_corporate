@@ -17,12 +17,6 @@
         %ul
           %li{:class =>"{% if page.tab == 'home' %}current_tab{% endif %}"}
             %a{:href => "index.html"} Home
-          %li{:class =>"{% if page.tab == 'features' %}current_tab{% endif %}"}
-            %a{:href => "features.html", :rel => "self"} Features
-          %li{:class =>"{% if page.tab == 'tour' %}current_tab{% endif %}"}
-            %a{:href => "tour.html", :rel => "self"} Tour
-          %li{:class =>"{% if page.tab == 'pricing' %}current_tab{% endif %}"}
-            %a{:href => "pricing.html", :rel => "self"} Pricing
           %li
             %a{:href => "./blog/", :rel => "self"} Blog     
           %li{:class =>"{% if page.tab == 'contact' %}current_tab{% endif %}"}

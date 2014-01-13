@@ -1,5 +1,5 @@
 name: Assign It To Us
-exclude: [config.rb,Rakefile,README.md]
+exclude: [config.rb,Rakefile,README.md,Gemfile]
 markdown: redcarpet
 pygments: true
 assets:
