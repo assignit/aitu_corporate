@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {{ page.title }}
+    </title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href='css/main.css' media='all' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese&amp;ver=3.3.2' id='ss-main-heading-font-css' media='all' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&amp;subset=cyrillic,latin&amp;ver=3.3.2' id='ss-blockquote-heading-font-css' media='all' rel='stylesheet' type='text/css'>
+      </link>
+    </link>
+  </head>
+  <body class='page'>
+    <header class='container'>
+      <a class='logo' href='/'>%logo%</a>
+      <nav>
+        <ul>
+          <li class="{% if page.tab == 'home' %}current_tab{% endif %}">
+            <a href='index.html'>Home</a>
+          </li>
+          <li class="{% if page.tab == 'features' %}current_tab{% endif %}">
+            <a href='features.html' rel='self'>Features</a>
+          </li>
+          <li class="{% if page.tab == 'tour' %}current_tab{% endif %}">
+            <a href='tour.html' rel='self'>Tour</a>
+          </li>
+          <li class="{% if page.tab == 'pricing' %}current_tab{% endif %}">
+            <a href='pricing.html' rel='self'>Pricing</a>
+          </li>
+          <li>
+            <a href='./blog/' rel='self'>Blog</a>
+          </li>
+          <li class="{% if page.tab == 'contact' %}current_tab{% endif %}">
+            <a href='contact.html' rel='self'>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class='container' id='content'>
+      <div class='row'>
+        <div class='span12'>{{ content }}</div>
+      </div>
+    </div>
+    <footer>
+      <div class='container'>
+        <ul>
+          <li>
+            <a href="http://assignittous.com">Assign It To Us, Inc.</a>&nbsp;&copy; 2012
+          </li>
+          <li>
+            <a href='privacy.html'>Privacy Policy</a>
+          </li>
+          <li>
+            <a href='terms.html'>Terms</a>
+          </li>
+          <li class='email'>
+            <a href='mailto:information@assignittome.com'>information@assignittome.com</a>
+          </li>
+          <li>
+            <a href=''>Open Source Credits</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

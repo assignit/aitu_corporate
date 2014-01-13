@@ -1,0 +1,53 @@
+!!!
+%html
+  %head
+    %title 
+      == {{ page.title }}
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->   
+
+    %link{:href => "css/main.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+      %link#ss-main-heading-font-css{:href => "http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese&ver=3.3.2", :media => "all", :rel => "stylesheet", :type => "text/css"}
+        %link#ss-blockquote-heading-font-css{:href => "http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&subset=cyrillic,latin&ver=3.3.2", :media => "all", :rel => "stylesheet", :type => "text/css"}
+  %body.page
+    %header.container
+      %a.logo{:href => "/"} %logo%
+      %nav
+        %ul
+          %li{:class =>"{% if page.tab == 'home' %}current_tab{% endif %}"}
+            %a{:href => "index.html"} Home
+          %li{:class =>"{% if page.tab == 'features' %}current_tab{% endif %}"}
+            %a{:href => "features.html", :rel => "self"} Features
+          %li{:class =>"{% if page.tab == 'tour' %}current_tab{% endif %}"}
+            %a{:href => "tour.html", :rel => "self"} Tour
+          %li{:class =>"{% if page.tab == 'pricing' %}current_tab{% endif %}"}
+            %a{:href => "pricing.html", :rel => "self"} Pricing
+          %li
+            %a{:href => "./blog/", :rel => "self"} Blog     
+          %li{:class =>"{% if page.tab == 'contact' %}current_tab{% endif %}"}
+            %a{:href => "contact.html", :rel => "self"} Contact
+ 
+    #content.container
+      .row
+        .span12== {{ content }}
+
+    %footer
+      .container
+        %ul
+          %li
+            <a href="http://assignittous.com">Assign It To Us, Inc.</a>&nbsp;&copy; 2012
+          %li
+            %a{:href => "privacy.html"} Privacy Policy
+          %li
+            %a{:href => "terms.html"} Terms
+          %li.email
+            %a{:href => "mailto:information@assignittome.com"} information@assignittome.com
+          %li
+            %a{:href => ""} Open Source Credits
+
+    
+
+
+    
+    

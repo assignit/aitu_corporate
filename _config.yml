@@ -1,0 +1,4 @@
+name: Assign It To Us
+exclude: [config.rb,Rakefile,Readme]
+markdown: redcarpet
+pygments: true
