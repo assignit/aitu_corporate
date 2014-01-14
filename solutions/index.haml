@@ -13,16 +13,16 @@ title: Assign It To Us - Solutions
     .form
       .field
         %label{for: 'vendor-os'} Operating System Licenses
-        %input#vendor-os{type: 'text', name: 'vendor-os'}
+        %input#vendor-os{type: 'text', name: 'vendor-os', value: '100,000'}
       .field
         %label{for: 'vendor-db'} Database Licenses
-        %input#vendor-db{type: 'text', name: 'vendor-db'}                
+        %input#vendor-db{type: 'text', name: 'vendor-db', value: '100,000'}                
       .field
         %label{for: 'vendor-bi'} BI Software Licenses
-        %input#vendor-bi{type: 'text', name: 'vendor-bi'}
+        %input#vendor-bi{type: 'text', name: 'vendor-bi', value: '100,000'}
       .field
         %label{for: 'vendor-services'} Services
-        %input#vendor-services{type: 'text', name: 'vendor-services'}    
+        %input#vendor-services{type: 'text', name: 'vendor-services', value: '100,000'}    
       .field
         %button#calculate-button.ui-shadow.ui-btn.ui-corner-all Calculate Your Savings        
 
@@ -64,7 +64,7 @@ title: Assign It To Us - Solutions
     
 %div#cost-report{'data-role'=>'popup'}
   %div{'data-role' => 'header'}
-    Cost Comparison
+    Ballpark Cost Comparison
   %div{'data-role' => 'content'}
   
     %table#comparison
@@ -110,6 +110,7 @@ title: Assign It To Us - Solutions
     services_cost = $("#vendor-services").val().toNumber()
   
     total = os_cost + db_cost + bi_cost + services_cost  
+    savings = os_cost + db_cost + bi_cost
   
     
     cost_report.find(".os-licenses").text os_cost.format(0,',','.')
@@ -118,7 +119,7 @@ title: Assign It To Us - Solutions
     cost_report.find(".services").text services_cost.format(0,',','.')
     cost_report.find(".vendor-total").text total.format(0,',','.')
     cost_report.find(".our-total").text services_cost.format(0,',','.')
-    
+    cost_report.find(".savings").text savings.format(0,',','.')    
     cost_report.popup "open"
     
     
