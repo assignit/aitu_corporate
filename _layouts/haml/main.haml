@@ -3,25 +3,24 @@
   %head
     %title 
       == {{ page.title }}
- 
+    %link{href: "http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css", rel: "stylesheet"}/
 
   %body.page
-    #navigator
-      %ul
-        %li
-          %a{href: '/'} Home
-        %li
-          %a{href: '/solutions'} Solutions
-        %li
-          %a{href: '/products'} Products        
-        %li
-          %a{href: '/services'} Services        
-        %li           
-          %a{href: '/about'} About                             
-    #content.container
-      == {{ content }}
+    %div{'data-role' => 'page'}
+      %div{'data-role' => 'navbar', 'data-grid' => 'c'}
+        %ul
+          %li
+            %a{href: '/'} Home
+          %li
+            %a{href: '/solutions'} Solutions
+          %li
+            %a{href: '/products'} Products        
+          %li
+            %a{href: '/services'} Services        
+          %li           
+            %a{href: '/about'} About                             
+      %div{'data-role' => 'content'}
+        == {{ content }}
 
-
-
-    
-    
+  %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
+  %script{src: "http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"} 
