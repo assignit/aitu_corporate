@@ -3,5 +3,4 @@ exclude: [config.rb,Rakefile,README.md,Gemfile]
 markdown: redcarpet
 pygments: true
 assets:
-  js_compressor:  uglifier
   css_compressor: sass
