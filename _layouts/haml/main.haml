@@ -6,7 +6,18 @@
  
 
   %body.page
-
+    #navigator
+      %ul
+        %li
+          %a{href: '/'} Home
+        %li
+          %a{href: '/solutions'} Solutions
+        %li
+          %a{href: '/products'} Products        
+        %li
+          %a{href: '/services'} Services        
+        %li           
+          %a{href: '/about'} About                             
     #content.container
       == {{ content }}
 
