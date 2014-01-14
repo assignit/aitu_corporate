@@ -11,19 +11,19 @@
       <div data-grid='d' data-role='navbar'>
         <ul>
           <li>
-            <a href='/'>Home</a>
+            <a class='{% if page.tab == "home" %}ui-btn-active{% endif %}' href='/'>Home</a>
           </li>
           <li>
-            <a href='/solutions'>Solutions</a>
+            <a class='{% if page.tab == "solutions" %}ui-btn-active{% endif %}' href='/solutions'>Solutions</a>
           </li>
           <li>
-            <a href='/products'>Products</a>
+            <a class='{% if page.tab == "products" %}ui-btn-active{% endif %}' href='/products'>Products</a>
           </li>
           <li>
-            <a href='/services'>Services</a>
+            <a class='{% if page.tab == "services" %}ui-btn-active{% endif %}' href='/services'>Services</a>
           </li>
           <li>
-            <a href='/about'>About</a>
+            <a class='{% if page.tab == "about" %}ui-btn-active{% endif %}' href='/about'>About</a>
           </li>
         </ul>
       </div>

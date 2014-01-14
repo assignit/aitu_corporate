@@ -10,15 +10,15 @@
       %div{'data-role' => 'navbar', 'data-grid' => 'd'}
         %ul
           %li
-            %a{href: '/'} Home
+            %a{href: '/', class: '{% if page.tab == "home" %}ui-btn-active{% endif %}'} Home
           %li
-            %a{href: '/solutions'} Solutions
+            %a{href: '/solutions', class: '{% if page.tab == "solutions" %}ui-btn-active{% endif %}'} Solutions
           %li
-            %a{href: '/products'} Products        
+            %a{href: '/products', class: '{% if page.tab == "products" %}ui-btn-active{% endif %}'} Products        
           %li
-            %a{href: '/services'} Services        
+            %a{href: '/services', class: '{% if page.tab == "services" %}ui-btn-active{% endif %}'} Services        
           %li           
-            %a{href: '/about'} About                             
+            %a{href: '/about', class: '{% if page.tab == "about" %}ui-btn-active{% endif %}'} About                             
       %div{'data-role' => 'content'}
         == {{ content }}
 
