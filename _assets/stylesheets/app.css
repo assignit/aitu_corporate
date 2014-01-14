@@ -1,3 +1,9 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
 td.r {
   text-align: right;
 }
@@ -19,3 +25,9 @@ td.r {
   color: white;
   text-shadow: none;
 }
+h1, .h1 { font-size: 62px; }
+h2, .h2 { font-size: 52px; }
+h3, .h3 { font-size: 40px; }
+h4, .h4 { font-size: 29px; }
+h5, .h5 { font-size: 28px; }
+h6, .h6 { font-size: 24px; } 
