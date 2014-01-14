@@ -30,7 +30,7 @@
             %a{href: '/about', class: '{% if page.tab == "about" %}ui-btn-active{% endif %}'} About                             
       %div{'data-role' => 'content'}
         == {{ content }}
-      %div{'data-role' => 'footer'}        
+      %div#page-footer{'data-role' => 'footer'}        
         :markdown
           Footer content goes here
           
