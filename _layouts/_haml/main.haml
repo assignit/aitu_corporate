@@ -9,9 +9,12 @@
     %link{:href => "/stylesheets/bootstrap.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/stylesheets/app.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
+    %script{src: "/javascripts/sugar.min.js"}
+    %script{src: "/javascripts/bootstrap/collapse.js"}
+    %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
   %body.page
     %div
-      %nav.navbar.navbar-default{role: "navigation"}
+      %nav.navbar.navbar-default.navbar-fixed-top{role: "navigation"}
         .navbar-header
           %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
             %span.sr-only Toggle navigation
