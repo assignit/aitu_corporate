@@ -1,7 +1,3 @@
 name: Assign It To Us
 exclude: [config.rb,Rakefile,README.md,Gemfile]
 markdown: redcarpet
-assets:
-  compress:
-    css: sass
-#    js:  uglifier
