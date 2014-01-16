@@ -3,20 +3,13 @@
   %head
     %title 
       == {{ page.title }}
-    %link{href: "http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css", rel: "stylesheet"}
     {% stylesheet app.css %}
     %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
-    :coffeescript
-      $(document).bind "mobileinit", () ->
-        $.mobile.ajaxEnabled = false
-        $.mobile.linkBindingEnabled = false;
-        $.mobile.hashListeningEnabled = false
-        $.mobile.pushStateEnabled = false    
-    %script{src: "http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"} 
+
     {% javascript app %}
   %body.page
     %div{'data-role' => 'page'}
-      %div#page-footer{'data-role' => 'header'}    
+      %div#page-header{'data-role' => 'header'}    
         %div Company name and logo
         %div{'data-role' => 'navbar', 'data-grid' => 'd'}
           %ul

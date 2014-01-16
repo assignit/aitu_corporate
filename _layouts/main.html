@@ -4,26 +4,13 @@
     <title>
       {{ page.title }}
     </title>
-    <link href='http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css' rel='stylesheet'>
     {% stylesheet app.css %}
     <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
-    <script>
-      (function() {
-        $(document).bind("mobileinit", function() {
-          $.mobile.ajaxEnabled = false;
-          $.mobile.linkBindingEnabled = false;
-          $.mobile.hashListeningEnabled = false;
-          return $.mobile.pushStateEnabled = false;
-        });
-      
-      }).call(this);
-    </script>
-    <script src='http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js'></script>
     {% javascript app %}
   </head>
   <body class='page'>
     <div data-role='page'>
-      <div data-role='header' id='page-footer'>
+      <div data-role='header' id='page-header'>
         <div>Company name and logo</div>
         <div data-grid='d' data-role='navbar'>
           <ul>
