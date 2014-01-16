@@ -7,7 +7,7 @@ title: Assign It To Us - Home
 .home-block.bg-wisteria.hero-block
   <!-- hero block, this is where the "who are we?" primary value statement is -->
   
-  %h1 We help companies make better decisions.
+  %h1 We help companies like yours make better decisions.
   
   %h2 Our solutions turn raw business data into insightful information.
 
@@ -16,21 +16,21 @@ title: Assign It To Us - Home
   %h1 Need help with a Cognos project?
   
   %h2
-    %a.popper{:href => '#', 'data-rel'=>"popup",  'data-transition'=>"pop"}  Assign it to us! 
-    We've got plenty of 
+    %a{:href => '#bizcard', 'data-toggle'=>"modal", 'data-target'=>"#bizcard"} Assign it to us,  
+    and we'll use our extensive 
     %a{href: '/services'} know-how
-    to help you get a new project up and running 
-    or to maintain an existing deployment.
+    to help you get where you need to be.
 
 
 .home-block.bg-peter
 
   %h1 Looking for a reporting solution?
   %h2
-    %a.popper{:href => '#', 'data-rel'=>"popup", 'data-transition'=>"pop"} Assign it to us! 
-    We have a 
+    %a{:href => '#bizcard', 'data-toggle'=>"modal", 'data-target'=>"#bizcard"} Assign it to us, 
+    and we'll help you build an open-source 
     %a{href: '/solutions'} reporting solution 
-    that will save you a ton of money on license fees!
+    that will save you a pile of money when
+    compared to the other guys.
       
 
 .home-block.bg-nephritis
@@ -38,7 +38,7 @@ title: Assign It To Us - Home
   %h1 Trying to get a grip on your project costs?
   
   %h2
-    We've got a solution for that too. It's a web application (that works on mobile too) called 
+    We've got a web-based solution for that too. It's called 
     %a{href: '/products'} Assign It To Me.
     We're in private beta right now, but you can 
     %a{href: 'http://www.assignittome.com'} sign up 
@@ -133,17 +133,20 @@ title: Assign It To Us - Home
     :markdown
       This is a test of the Vince annotation style
     
-  #bizcard.ui-content{'data-role'=>'popup'}
-    %p <b>Vince Iarusci</b>
-    %p information@assignittous.com
-    %p 999-999-9999
+#bizcard.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", 'data-keyboard' => 'true', type: "button"} &times;
+        %h4.modal-title Contact Us
+      .modal-body
+        %p Vince Iarusci
+        %p email: vince.iarusci@assignittous.com
+        %p phone: 999-999-9999
   
-:coffeescript 
-  bizcard =  $('#bizcard')
-  $(".popper").click (e)->
-    e.preventDefault()
-    e.stopPropagation()
-    bizcard.popup "open"
+
+  
+
     
     
   

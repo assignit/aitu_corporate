@@ -21,23 +21,19 @@ h1, h2, h3, h4, h5 {
   
 }
 
-#bizcard {
-  width: 300px;
-  height: 200px;
-}
-#bizcard p {
-  padding: 10px;
-}
+
 .home-block {
 
   padding: 80px;
   color: white;  
 }
 
-.home-block a, .home-block a:visited {
+.home-block a, .home-block a:visited, .home-block a:hover {
   color: white;
-  text-decoration: underline;
+  border-bottom: 2px dotted white;
+  text-decoration: none;
 }
+
 .bg-belize {
   background: #2980b9;
 
@@ -84,7 +80,7 @@ td.r {
   text-shadow: none;
 }
 h1, .h1 { font-size: 62px; }
-h2, .h2 { font-size: 36px; }
+h2, .h2 { font-size: 36px; line-height: 48px; }
 h3, .h3 { font-size: 24px; }
 h4, .h4 { font-size: 18px; }
 h5, .h5 { font-size: 12px; }

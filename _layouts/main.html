@@ -8,7 +8,11 @@
     <link href='/stylesheets/app.css' media='all' rel='stylesheet' type='text/css'>
     <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
     <script src='/javascripts/sugar.min.js'></script>
+    <script src='/javascripts/bootstrap/transition.js'></script>
     <script src='/javascripts/bootstrap/collapse.js'></script>
+    <script src='/javascripts/bootstrap/tooltip.js'></script>
+    <script src='/javascripts/bootstrap/popover.js'></script>
+    <script src='/javascripts/bootstrap/modal.js'></script>
     <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
   </head>
   <body class='page'>
@@ -41,10 +45,10 @@
         </div>
         <!-- /.navbar-collapse -->
       </nav>
-      <div data-role='content'>
+      <div id='content'>
         {{ content }}
       </div>
-      <div data-role='footer' id='page-footer'>
+      <div id='page-footer'>
         <p>Footer content goes here</p>
       </div>
     </div>

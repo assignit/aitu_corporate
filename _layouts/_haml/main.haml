@@ -10,7 +10,11 @@
     %link{:href => "/stylesheets/app.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
     %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
     %script{src: "/javascripts/sugar.min.js"}
+    %script{src: "/javascripts/bootstrap/transition.js"}    
     %script{src: "/javascripts/bootstrap/collapse.js"}
+    %script{src: "/javascripts/bootstrap/tooltip.js"}
+    %script{src: "/javascripts/bootstrap/popover.js"}        
+    %script{src: "/javascripts/bootstrap/modal.js"}
     %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
   %body.page
     %div
@@ -35,9 +39,9 @@
 
         / /.navbar-collapse              
                                       
-      %div{'data-role' => 'content'}
+      %div#content
         == {{ content }}
-      %div#page-footer{'data-role' => 'footer'}        
+      %div#page-footer
         :markdown
           Footer content goes here
           
