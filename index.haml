@@ -4,6 +4,51 @@ tab: home
 title: Assign It To Us - Home
 ---
 
+.home-block.bg-wisteria.hero-block
+  <!-- hero block, this is where the "who are we?" primary value statement is -->
+  
+  %h1 We help companies make better decisions.
+  
+  %h2 Our solutions turn raw business data into insightful information.
+
+.home-block.bg-belize
+
+  %h1 Need help with a Cognos project?
+  
+  %h2
+    %a.popper{:href => '#', 'data-rel'=>"popup",  'data-transition'=>"pop"}  Assign it to us! 
+    We've got plenty of 
+    %a{href: '/services'} know-how
+    to help you get a new project up and running 
+    or to maintain an existing deployment.
+
+
+.home-block.bg-peter
+
+  %h1 Looking for a reporting solution?
+  %h2
+    %a.popper{:href => '#', 'data-rel'=>"popup", 'data-transition'=>"pop"} Assign it to us! 
+    We have a 
+    %a{href: '/solutions'} reporting solution 
+    that will save you a ton of money on license fees!
+      
+
+.home-block.bg-nephritis
+
+  %h1 Trying to get a grip on your project costs?
+  
+  %h2
+    We've got a solution for that too. It's a web application (that works on mobile too) called 
+    %a{href: '/products'} Assign It To Me.
+    We're in private beta right now, but you can 
+    %a{href: 'http://www.assignittome.com'} sign up 
+    to be notified as soon as we go live.
+
+
+.home-block
+.home-block
+
+
 %div
   .annotation.s
     :markdown
@@ -22,58 +67,33 @@ title: Assign It To Us - Home
       1. They are looking for info on Assign It To Me
       1. They are looking for our "We'll Show You How" screencasts
       
-  .annotation.s
-    :markdown
-    
-      We should think about the ratio of computer vs mobile visits to the site with respect to any wizziness to the page.
-      
-      I'm guessing it's going to be 50% or higher in favor of mobile.
-  
 
-%div.hero-block
-  <!-- hero block, this is where the "who are we?" primary value statement is -->
-  
-  %h1 We help companies make better decisions.
-  
-  %h3 Our solutions turn raw business data into insightful information.
 
-.annotation.s
-  :markdown
-    The goal of the hero block above is to summarize what we do in two pithy, jargon-free sentences.
+
+
 
 %hr  
 
 .annotation.s
-  Note that a carousel isn't mobile friendly. Might just want to put the content in-line and have users scroll to read it.
+  :markdown
+    Note that a carousel isn't mobile friendly. Might just want to put the content in-line and have users scroll to read it.
   
 .annotation.s
-  Perhaps each teaser question should address the three or four most common things people are coming here for.
-  
-  My first kick at the can:
-  
-  1. Someone to help them with Cognos - the supporting text should link to appropriate place on Services page and to the We'll Show You How screencasts page
-  2. Someone to help them implement *any* BI solution
-  3. ?? Looking for a profitability solution ?? redirect to AITM 
-  4. ?? ??
-  
-
-
-:markdown
-  
-  ## Steven's suggested teasers
-  ### Looking for help with a new or existing Cognos deployment?
-  
-  Supporting text here
-  
-  ### Are you looking to deploy a new reporting solution for your company and finding the options too expensive?
-  
-  Supporting text here
-  
-  ### Are you a services business trying to get a handle on your project profitability?
-  
-  Supporting AITM text and links here.
+  :markdown
+    Perhaps each teaser question should address the three or four most common things people are coming here for.
     
-  ---
+    My first kick at the can:
+    
+    1. Someone to help them with Cognos - the supporting text should link to appropriate place on Services page and to the We'll Show You How screencasts page
+    2. Someone to help them implement *any* BI solution
+    3. ?? Looking for a profitability solution ?? redirect to AITM 
+    4. ?? ??
+    
+
+
+
+    
+    ---
   
 :markdown
 
@@ -112,4 +132,17 @@ title: Assign It To Us - Home
   :markdown
     This is a test of the Vince annotation style
 
+#bizcard.ui-content{'data-role'=>'popup'}
+  %p <b>Vince Iarusci</b>
+  %p information@assignittous.com
+  %p 999-999-9999
+  
+:coffeescript 
+  bizcard =  $('#bizcard')
+  $(".popper").click (e)->
+    e.preventDefault()
+    e.stopPropagation()
+    bizcard.popup "open"
+    
+  
 

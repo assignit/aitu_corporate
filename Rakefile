@@ -48,6 +48,11 @@ task :build_and_move => [:build, :move] do |task, args|
 
 end
 
+desc "Build site and move to local server"
+task :local => [:build, :move] do |task, args|
+
+end
+
 
 
 

@@ -4,6 +4,53 @@ body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: normal !important;
+}
+
+.ui-content {
+  padding: 0px;
+}
+
+.ui-link {
+  color: white;  
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  
+}
+
+#bizcard {
+  width: 300px;
+  height: 200px;
+}
+#bizcard p {
+  padding: 10px;
+}
+.home-block {
+
+  padding: 80px;
+  color: white;  
+}
+
+.home-block a, .home-block a:visited {
+  color: white;
+}
+.bg-belize {
+  background: #2980b9;
+
+}
+.bg-peter {
+  background: #3498db;
+}
+.bg-nephritis {
+  background: #27ae60; 
+}
+.bg-wisteria {
+  background: #8e44ad;
+}
+.hide {
+  display: none;
+}
+
 #page-footer {
   background: #2c3e50;
   color: #ecf0f1;
