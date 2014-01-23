@@ -15,7 +15,6 @@
     %script{src: "/javascripts/bootstrap/tooltip.js"}
     %script{src: "/javascripts/bootstrap/popover.js"}        
     %script{src: "/javascripts/bootstrap/modal.js"}
-    %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
   %body.page
     %div
       %nav.navbar.navbar-default.navbar-fixed-top{role: "navigation"}
@@ -51,6 +50,14 @@
               * phone
               * email
               * etc
-              
+    :javascript
+      $(document).ready(function() {
+            $('.popper').popover(
+        {
+        html: true
+        }
+        );
+      });
 
+        
 

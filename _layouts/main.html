@@ -13,7 +13,6 @@
     <script src='/javascripts/bootstrap/tooltip.js'></script>
     <script src='/javascripts/bootstrap/popover.js'></script>
     <script src='/javascripts/bootstrap/modal.js'></script>
-    <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
   </head>
   <body class='page'>
     <div>
@@ -58,5 +57,14 @@
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function() {
+            $('.popper').popover(
+        {
+        html: true
+        }
+        );
+      });
+    </script>
   </body>
 </html>
