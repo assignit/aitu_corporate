@@ -111,7 +111,7 @@ title: Assign It To Us - What We Do
     Our framework allows you to build only what you need, with no added fluff. It's also better than building from scratch, as our 
     framework's stack is built from 
     %a.popper{href: '#',
-      'data-original-title' => 'Our Stack',
+      'data-original-title' => 'Technologies We Use',
       'data-content' => '<ul><li>CentOS Linux<li>PostgreSQL<li>Scriptella (ETL)<li>Ruby on Rails<li>Groc Automated Documentation<li>Chef Automated Provisioning<li>Git Source Control</ul>'} proven, open source technologies.
 
   %p And the best part of our solution, is that your software licenses have <b>zero cost</b>. Yes, you read that right. Zero cost software. 
@@ -125,11 +125,18 @@ title: Assign It To Us - What We Do
   
   %p 
     <i>[insert name here]</i> is built for companies that need 
-    %a.popper{href: '#',
-      'data-original-title' => 'Our Solution Includes',
-      'data-content' => '<ul><li>a data warehouse<li>...</ul>'} a powerful reporting solution
+    %a{href: '#',"data-target" => "#myModal", "data-toggle" => "modal"} a powerful reporting solution
+    #myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"}
+            %h4#myModalLabel.modal-title Our Stack
+          .modal-body
+            %img{border: "0", src: "http://drive.google.com/uc?export=view&id=0BygCCe8y5WZmeGVzdWhwQ0RjNzg"}/
+          .modal-footer
+            %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
     but without the huge costs required to just get a foot in the door.
-
 
   %p
     Check out the <i>[insert name here]</i> site for detailed information, or simply contact us for a demo.
