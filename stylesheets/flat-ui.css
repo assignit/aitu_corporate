@@ -5582,7 +5582,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   z-index: 1040;
 }
 .modal-dialog {
-  z-index: 1050;
+  z-index: 1050; 
 }
 .modal-content {
   width: 1200px;
@@ -5654,7 +5654,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 }
 @media screen and (min-width: 768px) {
   .modal-dialog {
-    width: 624px;
+    width: 1200px;
   }
 }
 /* ============================================================
