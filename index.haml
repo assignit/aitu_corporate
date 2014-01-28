@@ -14,8 +14,6 @@ title: Assign It To Us - Home
         %ul.slides
           %li
             %p make better decisions
-          %li
-            %p more profitable
             
 %section#services.padding-bottom.bg-light
   .container
@@ -179,32 +177,6 @@ title: Assign It To Us - Home
 
     .row
 
-      %form#contact-form.col-sm-6.scrollimation.fade-right{action: "contact.php", method: "post", novalidate: ""}
-        %h3.primary Drop us a line
-        .form-group
-          %label.control-label{for: "contact-name"} Name
-          .controls
-            %input#contact-name.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your name", name: "contactName", placeholder: "Your name", type: "text"}
-            %i.fa.fa-user
-
-        .form-group
-          %label.control-label{for: "contact-mail"} Email
-          .controls
-            %input#contact-mail.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your email", "data-error-invalid" => "Invalid email address", name: "email", placeholder: "Your email", type: "email"}
-            %i.fa.fa-envelope
-
-        .form-group
-          %label.control-label{for: "contact-message"} Message
-          .controls
-            %textarea#contact-message.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your message", name: "comments", placeholder: "Your message", rows: "6"}
-            %i.fa.fa-comment
-
-        %p
-          %button.btn.btn-theme.btn-block{"data-error-message" => "Error!", "data-ok-message" => "Message Sent", "data-sending-message" => "Sending...", name: "submit", type: "submit"}
-            %i.fa.fa-location-arrow>
-            Send Message
-        %input#submitted{name: "submitted", type: "hidden", value: "true"}/
-
       .col-sm-5.col-sm-offset-1.contact-info
         .scrollimation.scale-in
           %h3.primary Find Us
@@ -239,26 +211,7 @@ title: Assign It To Us - Home
             %li
               %span Sunday :
 
-        .map.scrollimation.scale-in
-          %img.img-responsive{alt: "", src: "assets/map.png"}/
-          %a.spot{"data-toggle" => "tooltip", href: "https://maps.google.ca/maps?q=1+Yonge+Street,+Toronto,+ON&hl=en&sll=43.772451,-79.525184&sspn=0.007623,0.013776&oq=1+yonge+&t=h&hnear=1+Yonge+St,+Toronto,+Ontario+M5E+1N4&z=17", style: "top:38%; left:26.5%;", target: "_blank", title: "Find Us on Google Maps"}
-            %span
 
-%section#social-links.bg-transparent
-  .container
-    %ul
-      %li.scrollimation.fade-up
-        %a.icon{href: "#dribbblelink"}
-          %i.fa.fa-tumblr
-        %h4 AITU Blog
-      %li.scrollimation.fade-up.d1
-        %a.icon{href: "#twitterlink"}
-          %i.fa.fa-twitter
-        %h4 Follow us on Twitter
-      %li.scrollimation.fade-up.d2
-        %a.icon{href: "#facebooklink"}
-          %i.fa.fa-facebook
-        %h4 Like us on Facebook
 
 
 
