@@ -4,146 +4,268 @@ tab: home
 title: Assign It To Us - Home
 ---
 
-.home-block.bg-wisteria.hero-block
-  <!-- hero block, this is where the "who are we?" primary value statement is -->
-  
-  %h2 We help companies like yours make better decisions.
-  
-  %h4 Our solutions turn raw business data into insightful information.
+%header#home.jumbotron
+  .container
+    %img.img-responsive.img-center.header-logo{alt: "", src: "assets/assignit_logo_white.png"}
+    .message-box.clearfix
+      .first-line
+        %p We help companies like yours
+      .second-line.flexslider.home-slider
+        %ul.slides
+          %li
+            %p make better decisions
+          %li
+            %p more profitable
+            
+%section#services.padding-bottom.bg-light
+  .container
+    .section-header.scrollimation.fade-up
+      .section-icon
+        %i.fa.fa-question
+      %h1.section-title Need help with a Cognos project?
+      %p.section-description.lead Assign it to us, and we'll use our extensive know-how to help you get where you need to be.
 
-.home-block.bg-belize
+    .section-header.scrollimation.fade-up
+      %h1.section-title Looking for a reporting solution?
+      %p.section-description.lead Assign it to us, and we'll help you build an open-source reporting solutionthat will save you a pile of money when compared to the other guys.
 
-  %h2 Need help with a Cognos project?
-  
-  %h4
-    %a{:href => '#bizcard', 'data-toggle'=>"modal", 'data-target'=>"#bizcard"} Assign it to us,  
-    and we'll use our extensive 
-    %a{href: '/what_we_do'} know-how
-    to help you get where you need to be.
+    .section-header.scrollimation.fade-up
+      %h1.section-title Trying to get a grip on your project costs?
+      %p.section-description.lead We've got a web-based solution for that too. It's called Assign It To Meand it will save you a pile of money when compared to the other guys.
+
+%section.bg-transparent.cta
+  .container
+    .row
+      .col-md-9.cta-message.scrollimation.fade-right
+        %p
+          %strong Assign It To Me
+          We overthink project management so you can focus on what matters.
+      .col-md-3.cta-button.scrollimation.fade-left
+        %p.text-center
+          %a.btn.btn-theme.btn-lg{href: "#link", target: "_blank"}
+            %i.fa.fa-bar-chart-o>
+            Start Your Free Trial
+
+%section#portfolio
+  .bg-light
+
+    .container
+      .section-header.scrollimation.fade-up
+        .section-icon
+          %i.fa.fa-bar-chart-o
+        %h1.section-title We do Cognos
+        %p.section-description.lead
+          We've spent a good part of the last decade delivering Cognos solutions for businesses of all sizes in many industries. Much of that time was spent pushing Cognos to its limits.
+          %br
+          So why hire us?
+          %br
+          A lot of Cognos experts out there are simply that. Experts at Cognos, and not much else.
+          %br
+          We're good at Cognos, but not because of our knowledge of Cognos. We're good at Cognos because we also know and understand the technologies that support and surround Cognos.
+          %br
+          We know data warehouses and databases. We know that some problems are best solved with raw SQL. We know root cause analysis. We know how to code. And we work smart.
+          %br
+          Most importantly, we're more interested in helping you solve your problems than selling you software licenses. If there's a nail that the Cognos hammer can't hit, we probably have a hammer. in our toolbox that can.
+          %br
+          Do you need a difference maker on your Cognos project? Contact us now
+
+      .section-header.scrollimation.fade-up
+        %h1.section-title Cognos not a fit for you? We can still help.
+        %p.section-description.lead
+          We're not a one trick pony. If you're looking for a reporting or analytics solution and have found that the commercial alternatives like Cognos just aren't a fit for you, we can still help.
+          %br
+          Don't get us wrong, software like Cognos have their place, but they're designed to be everything to everyone (and are priced appropriately), and that can leave your business out in the cold.
+          %br
+          We've designed and built [insert name here] which is a simple but powerful data warehouse, reporting and analysis framework.
+          %br
+          Our framework allows you to build only what you need, with no added fluff. It's also better than building from scratch, as our framework's stack is built from proven, open source technologies.
+          %br
+          And the best part of our solution, is that your software licenses have zero cost. Yes, you read that right. Zero cost software.
+          %br
+          Because you are using open source software, there's no up front cost for the software. There's also no annual maintenance fees. And, if you need to make a software upgrade, there's no charge for that either. If you want to plug in some software pieces that you've already paid for, that's okay too.
+          %br
+          You only pay for the services work to build what you need.
+          %br
+          [insert name here] is built for companies that need a powerful reporting solution but without the huge costs required to just get a foot in the door.
+          %br
+          You only pay for the services work to build what you need.
+          %br
+          Check out the [insert name here] site for detailed information, or simply contact us for a demo.
+          %br
+
+      .section-header.scrollimation.fade-up
+        %h1.section-title Struggling to rein in your projects? We've got something for that too.
+        %p.section-description.lead
+          After years of consulting, we still couldn't find an all encompassing tool to run our projects well. When you're running a consulting business, you need a good grasp of your costs and how well your projects are doing so that you can better serve your customers.
+          %br
+          So we took matters into our own hands, and created Assign It To Me. We used our background in analytics to develop a system that gives us a high level snapshot of our projects' health.
+          %br
+          Assign it to me is a web-based, mobile friendly tool that helps consulting firms like ours run their projects profitably and successfully.
+          %br
+          We put our money where our mouth is, and we use Assign It To Me on all of our engagements.
+          %br
+          For more details, visit the Assign It To Me site, or just give us a shout.
+          %br
+
+      .container
+        %br
+        %p.lead.text-center.scrollimation.fade-in
+          We are ready for the next challenge.
+          %span.primary Yours!
+        %p.text-center.scrollimation.scale-in
+          %a.btn.btn-theme.btn-lg.scrollto{href: "#contact"} Contact Us
+
+%section#testimonials.bg-transparent
+  .container.scrollimation.fade-left
+    .quote-icon
+
+      %i.fa.fa-quote-left
+    .row
+      .col-sm-8.col-sm-offset-2
+        #testimonials-slider.flexslider
+          %ul.slides
+
+            %li
+              %p.testimonial Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor.
+              %img.client-img.img-circle{alt: "", src: "assets/client-placeholder.jpg"}
+              %p.client
+
+                %span Google Inc.
+
+            %li
+              %p.testimonial Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor.
+              %img.client-img.img-circle{alt: "", src: "assets/client-placeholder.jpg"}
+              %p.client
+                John Doe
+                %span Microsoft
+            %li
+              %p.testimonial Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor.
+              %img.client-img.img-circle{alt: "", src: "assets/client-placeholder.jpg"}
+              %p.client
+                John Doe
+                %span Amazon
+
+%section#about.padding-bottom.bg-light
+  .container
+    .section-header.scrollimation.fade-up
+      .section-icon
+        %i.fa.fa-users
+      %h1.section-title Our History
+      %p.section-description.lead Formed in 2012, Assign It To Us Technologies Inc. was founded by Vince Iarusci and Steven Ng, two technology professionals who spent several years working together in the field of business intelligence. Steven and Vince use their combined 40 ( 21 vince + 19 steven) years of business and technology experience to build data solutions that give their clients better insights into their businesses.
+
+%section#twitter.bg-transparent
+  .container
+    .row
+      .col-md-9.cta-message.scrollimation.fade-right
+        %p
+          %strong Assign It To Me
+          We overthink project management so you can focus on what matters.
+      .col-md-3.cta-button.scrollimation.fade-left
+        %p.text-center
+          %a.btn.btn-theme.btn-lg{href: "#link", target: "_blank"}
+            %i.fa.fa-bar-chart-o>
+            Start Your Free Trial
+
+%section#contact.padding-bottom.bg-light
+  .container
+    .section-header.scrollimation.fade-up
+      .section-icon
+        %i.fa.fa-envelope
+      %h1.section-title Contact
+      %p.section-description.lead
+        Are you ready to start your project? We are here for you.
+        %br
+        Visit us, write to us or call us
+
+    .row
+
+      %form#contact-form.col-sm-6.scrollimation.fade-right{action: "contact.php", method: "post", novalidate: ""}
+        %h3.primary Drop us a line
+        .form-group
+          %label.control-label{for: "contact-name"} Name
+          .controls
+            %input#contact-name.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your name", name: "contactName", placeholder: "Your name", type: "text"}
+            %i.fa.fa-user
+
+        .form-group
+          %label.control-label{for: "contact-mail"} Email
+          .controls
+            %input#contact-mail.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your email", "data-error-invalid" => "Invalid email address", name: "email", placeholder: "Your email", type: "email"}
+            %i.fa.fa-envelope
+
+        .form-group
+          %label.control-label{for: "contact-message"} Message
+          .controls
+            %textarea#contact-message.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your message", name: "comments", placeholder: "Your message", rows: "6"}
+            %i.fa.fa-comment
+
+        %p
+          %button.btn.btn-theme.btn-block{"data-error-message" => "Error!", "data-ok-message" => "Message Sent", "data-sending-message" => "Sending...", name: "submit", type: "submit"}
+            %i.fa.fa-location-arrow>
+            Send Message
+        %input#submitted{name: "submitted", type: "hidden", value: "true"}/
+
+      .col-sm-5.col-sm-offset-1.contact-info
+        .scrollimation.scale-in
+          %h3.primary Find Us
+          %ul.address
+            %li
+              %span>
+                %i.fa.fa-map-marker.fa-fw
+              27 Wheelwright Crescent
+              %br
+              Toronto, Ontario M3N 1V2
+            %li
+              %span>
+                %i.fa.fa-phone.fa-fw
+              (647) 629 - 8986
+            %li
+              %span>
+                %i.fa.fa-print.fa-fw
+              (123) 456 - 7890
+            %li
+              %span
+                %i.fa.fa-envelope.fa-fw
+              %a{href: "mailto:vince.iarusci@assignittous.com"} vince.iarusci@assignittous.com
+        .scrollimation.scale-in
+          %h3.primary Business Hours
+          %ul.hours
+            %li
+              %span> Mon - Fri :
+              9am - 5pm
+            %li
+              %span> Saturday :
+              9am - 2pm
+            %li
+              %span Sunday :
+
+        .map.scrollimation.scale-in
+          %img.img-responsive{alt: "", src: "assets/map.png"}/
+          %a.spot{"data-toggle" => "tooltip", href: "https://maps.google.ca/maps?q=1+Yonge+Street,+Toronto,+ON&hl=en&sll=43.772451,-79.525184&sspn=0.007623,0.013776&oq=1+yonge+&t=h&hnear=1+Yonge+St,+Toronto,+Ontario+M5E+1N4&z=17", style: "top:38%; left:26.5%;", target: "_blank", title: "Find Us on Google Maps"}
+            %span
+
+%section#social-links.bg-transparent
+  .container
+    %ul
+      %li.scrollimation.fade-up
+        %a.icon{href: "#twitterlink"}
+          %i.fa.fa-twitter
+        %h4 Follow us on Twitter
+      %li.scrollimation.fade-up.d1
+        %a.icon{href: "#facebooklink"}
+          %i.fa.fa-facebook
+        %h4 Like us on Facebook
+      %li.scrollimation.fade-up.d2
+        %a.icon{href: "#dribbblelink"}
+          %i.fa.fa-tumblr
+        %h4 AITU Blog
+      %li.scrollimation.fade-up.d3
+        %a.icon{href: "#gpluslink"}
+          %i.fa.fa-google-plus
+        %h4 Find us on Google+
 
 
-.home-block.bg-peter
 
-  %h2 Looking for a reporting solution?
-  %h4
-    %a{:href => '#bizcard', 'data-toggle'=>"modal", 'data-target'=>"#bizcard"} Assign it to us, 
-    and we'll help you build an open-source 
-    %a{href: '/what_we_do'} reporting solution 
-    that will save you a pile of money when
-    compared to the other guys.
-      
-
-.home-block.bg-nephritis
-
-  %h2 Trying to get a grip on your project costs?
-  
-  %h4
-    We've got a web-based solution for that too. It's called 
-    %a{href: '/what_we_do'} Assign It To Me.
-    We're in private beta right now, but you can 
-    %a{href: 'http://www.assignittome.com'} sign up 
-    to be notified as soon as we go live.
-
-
-
-
-
-
-.hidden
-  %div
-    .annotation.s
-      :markdown
-        Note this is using a vanilla install of Jquery mobile. It has not been customized and it may not stay for the final version.
-        
-    .annotation.s
-      :markdown
-        This page should answer the three most common things people are coming to the site for.
-      
-        Steven's guesses for why people would come to our site:
-        
-        1. They are wondering who we are. They = competitors, prospects, friends and former colleagues
-        1. They are looking for contact information. They = same as above + spammers + and people who want to sell us crap + headhunters
-        1. They are looking for a BI solution or consulting
-        1. They are looking for help with Cognos
-        1. They are looking for info on Assign It To Me
-        1. They are looking for our "We'll Show You How" screencasts
-        
-  
-  
-  
-  
-  
-  %hr  
-  
-  .annotation.s
-    :markdown
-      Note that a carousel isn't mobile friendly. Might just want to put the content in-line and have users scroll to read it.
-    
-  .annotation.s
-    :markdown
-      Perhaps each teaser question should address the three or four most common things people are coming here for.
-      
-      My first kick at the can:
-      
-      1. Someone to help them with Cognos - the supporting text should link to appropriate place on Services page and to the We'll Show You How screencasts page
-      2. Someone to help them implement *any* BI solution
-      3. ?? Looking for a profitability solution ?? redirect to AITM 
-      4. ?? ??
-      
-  
-  
-  
-      
-      ---
-    
-  :markdown
-  
-    <!-- masthead -->
-    
-    <!-- Vince -->
-    
-    Carousel of teaser questions
-    
-    **Need someone to help you make sense of your growing mountain of business data?**
-    **Are you mired in spreadsheet sprawl and need a better way of getting a consistent perspective of your operations?**
-    **Do you need help building a business intelligence solution without breaking the bank on license fees?**
-    
-    ...Assign it to Us!
-    
-    **Tired of hearing the same old buzzword bingo from your vendors when all you want are dashboards and reports? We can help.**
-  
-    **Need someone to help you make sense of your growing mountain of business data?**
-    
-    **Are you mired in spreadsheet sprawl and need a better way of getting a consistent perspective of your operations?**
-    
-    **Do you need help building a business intelligence solution without breaking the bank on license fees?**
-    
-    ####...Assign it to Us!
-    
-    **Tired of hearing the same old buzzword bingo from your vendors when all you want are dashboards and reports?** 
-    
-    ####...We can help.
-    
-    ## Better information = Better decisions. We'll handle the information part.
-  
-    
-    ---
-  
-  .annotation.v
-    :markdown
-      This is a test of the Vince annotation style
-    
-#bizcard.modal.fade
-  .modal-dialog
-    .modal-content
-      .modal-header
-        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", 'data-keyboard' => 'true', type: "button"} &times;
-        %h4.modal-title Contact Us
-      .modal-body
-        %p Vince Iarusci
-        %p email: vince.iarusci@assignittous.com
-        %p phone: 999-999-9999
-  
 
   
 
