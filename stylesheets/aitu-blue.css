@@ -16,7 +16,7 @@ h4,
 h5,
 h6{
 	font-family: Roboto, sans-serif;
-    font-weight:100;
+    font-weight:300;
 }
 
 p {
@@ -157,11 +157,11 @@ a:focus,
 }
 
 #main-nav a.ir-logo {
-    margin:0;
+    margin-right:20px;
     margin-top:5px;
     padding:0;
-    width:200px;
-    height:50px;
+    width:40px;
+    height:40px;
 	text-indent: 200%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -208,7 +208,7 @@ a:focus,
     color:#fff;
 }
 
-.section-title{
+.section-centertitle{
     display:inline-block;
     position:relative;
     top:-35px;
@@ -217,14 +217,34 @@ a:focus,
     background:#fff;
     font-size:42px;
     line-height:64px;
-    font-weight:100;
+    font-weight:300;
     text-align:center;
 	text-transform:uppercase;
     color:#7c7c7c;
 }
 
+.section-title{
+    position:relative;
+    top:-35px;
+    margin:0px;
+    padding:0;
+    background:#fff;
+    font-size:42px;
+    line-height:64px;
+    font-weight:300;
+    text-align:left;
+	text-transform:uppercase;
+    color:#7c7c7c;
+}
+
+.section-centerdescription {
+    margin-top:-30px;
+    text-align: center;
+}
+
 .section-description {
     margin-top:-30px;
+    text-align: left;
 }
 
 /*------------------
@@ -299,7 +319,7 @@ a.btn-theme:focus{
     font-size:28px;
     line-height:54px;
     font-weight:500;
-    color:#527394;
+    color:#fff;
     -webkit-transition:font-size .2s ease-out;
     transition:font-size .2s ease-out;
 }
@@ -311,29 +331,29 @@ a.btn-theme:focus{
 
 #main-nav.scrolled .navbar-brand{
     font-size:24px;
-    color:#527394;
+    color:#fff;
 }
 
 #main-nav{
     background:transparent;
-    background:#fff;
+    background:#527394;
     color:#fff;
     box-shadow:0 0 0px transparent;
     
 }
 
 #main-nav.scrolled{
-    background:#fff;
+    background:##fff;
     border-bottom:1px solid #eee;
 }
 
 #main-nav.scrolled .navbar-toggle{
-    color:#527394;
-    border-color:#527394;
+    color:#fff;
+    border-color:#fff;
 }
 
 #main-nav.scrolled .navbar-toggle .icon-bar{
-    background:#527394;
+    background:#fff;
 }
 
 #main-nav .container{
@@ -359,7 +379,7 @@ a.btn-theme:focus{
     line-height:54px;
     font-weight:100;
     background:transparent;
-    color:#777;
+    color:#fff;
 }
 
 #main-nav .nav a:before {
@@ -395,7 +415,7 @@ a.btn-theme:focus{
 #main-nav.scrolled .nav a,
 #main-nav.scrolled .nav a:active,
 #main-nav.scrolled .nav a:hover{
-    color:#777;
+    color:#fff;
 }
 
 .no-csstransforms #main-nav .nav a:before {
@@ -1894,17 +1914,17 @@ a.btn-theme:focus{
 }
 
 #main-nav{
-    background:#fff;
+    background:#527394;
     border-bottom:1px solid #ddd;
 }
 
 #main-nav .navbar-toggle{
-    color:#527394;
-    border-color:#527394;
+    color:#fff;
+    border-color:#fff;
 }
 
 #main-nav .navbar-toggle .icon-bar{
-    background:#527394;
+    background:#fff;
 }
 
 #main-nav .container{
