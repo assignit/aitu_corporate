@@ -22,14 +22,14 @@ h6{
 p {
     font-size:16px;
     line-height:24px;
-    font-weight:300;
+    font-weight:400;
     margin-bottom:20px;
 }
 
 .lead {
     font-size:20px;
     line-height:28px;
-    font-weight:100;
+    font-weight:400;
     letter-spacing:0.02em;
     margin-top:40px;
     margin-bottom:40px;
@@ -183,14 +183,15 @@ a:focus,
     margin-bottom:60px;
     text-align:center;
     position:relative;
+/*
     border-top:1px dotted #527394;
     border-bottom:1px dotted #527394;
+*/
 }
 
 .section-icon{
     display:inline-block;
-    position:absolute;
-    top:-160px;
+    position:relative;
     left:50%;
     margin-left:-40px;
     background-color:#527394;
@@ -217,7 +218,7 @@ a:focus,
     background:#fff;
     font-size:42px;
     line-height:64px;
-    font-weight:300;
+    font-weight:700;
     text-align:center;
 	text-transform:uppercase;
     color:#7c7c7c;
@@ -231,7 +232,7 @@ a:focus,
     background:#fff;
     font-size:42px;
     line-height:64px;
-    font-weight:300;
+    font-weight:700;
     text-align:left;
 	text-transform:uppercase;
     color:#7c7c7c;
