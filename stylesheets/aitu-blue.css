@@ -446,8 +446,9 @@ a.btn-theme:focus{
     background:transparent;
     color:#fff;
     padding:0;
-    margin-bottom:0;
-    min-height:500px;
+/*     margin-bottom:0; */
+    min-height:300px;
+    max-height:500px;    
 }
 
 .jumbotron .container {
