@@ -93,9 +93,9 @@ span.rewrite {
 }
 
 
-a.qtip {
+a.tip {
   text-decoration: none;
-  border-bottom: 1px dotted white;
+  border-bottom: 2px dotted white;
 }
 
 /* RESPONSIVE STYLES */
