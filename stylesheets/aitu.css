@@ -83,6 +83,10 @@ span.rewrite {
   
 }
 
+
+.tooltiptext {
+  display: none;
+}
 /* TEXT COLOR */
 
 .text-white {

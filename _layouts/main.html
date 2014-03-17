@@ -48,7 +48,13 @@
     {{ content }}
     <script>
       $(document).ready(function () {
-        $('a.tip[title]').qtip();
+         $('a.tip').each(function() {
+             $(this).qtip({
+                 content: {
+                     text: $(this).next('.tooltiptext')
+                 }
+             });
+         });      
       });
     </script>
   </body>
