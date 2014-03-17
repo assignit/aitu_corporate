@@ -37,7 +37,8 @@
       JS
       ===============================================
     -->
-    <script src='http://code.jquery.com/jquery-1.9.1.min.js'>
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script src='http://cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.js'>
       ==============================================
       MAIN NAV
       ===============================================
@@ -45,5 +46,10 @@
   </head>
   <body>
     {{ content }}
+    <script>
+      $(document).ready(function () {
+        $('a.qtip[title]').qtip();
+      });
+    </script>
   </body>
 </html>
