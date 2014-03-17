@@ -26,9 +26,7 @@
     -->
     <link href='/stylesheets/bootstrap.css' rel='stylesheet'>
     <link href='/stylesheets/font-awesome.css' rel='stylesheet'>
-    <link href='/stylesheets/aitu-fonts.css' rel='stylesheet'>
-    <link href='/stylesheets/flexslider.css' rel='stylesheet'>
-    <link href='/stylesheets/aitu-blue.css' id='main' rel='stylesheet'>
+    <link href='/stylesheets/aitu.css' rel='stylesheet'>
     <!--
       ==============================================
       Fonts
@@ -76,22 +74,54 @@
       ===============================================
     </script>
   </body>
-  <body class='page'>
-    <div>
-      <div class='navbar' id='main-nav'>
-        <div class='container'>
-          <div class='navbar-header'>
-            <button class='navbar-toggle' data-target='#site-nav' data-toggle='collapse' type='button'>
-              <span class='icon-bar'></span>
-              <span class='icon-bar'></span>
-              <span class='icon-bar'></span>
-            </button>
-            <!-- ======= LOGO ======== -->
-            <a class='navbar-brand scrollto' href='#home'>Assign It To Us</a>
+  <body>
+    <div id='navbar'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='#site-nav' data-toggle='collapse' type='button'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <!-- ======= LOGO ======== -->
+          <a class='navbar-brand scrollto' href='#home'>Assign It To Us</a>
+        </div>
+        <div id='site-nav'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='sr-only'>
+              <a class='scrollto' href='#home'>Top</a>
+            </li>
+            <li>
+              <a class='scrollto' href='#services'>Label 1</a>
+            </li>
+            <li>
+              <a class='scrollto' href='#portfolio'>Label 2</a>
+            </li>
+            <li>
+              <a class='scrollto' href='#about'>Label 3</a>
+            </li>
+            <li>
+              <a class='scrollto' href='#contact'>Label 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id='content'>
+      {{ content }}
+    </div>
+    <div id='footer'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-6 left-col'>
+            <p>
+              <span>Assign It To Us</span>
+              Copyright 2014 / All Rights Reserved
+            </p>
           </div>
-          <div id='site-nav'>
-            <ul class='nav navbar-nav navbar-right'>
-              <li class='sr-only'>
+          <div class='col-sm-6 right-col'>
+            <ul class='footer-nav'>
+              <li>
                 <a class='scrollto' href='#home'>Top</a>
               </li>
               <li>
@@ -110,40 +140,6 @@
           </div>
         </div>
       </div>
-      <div id='content'>
-        {{ content }}
-      </div>
-      <footer id='main-footer'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-6 left-col'>
-              <p>
-                <span>Assign It To Us</span>
-                Copyright 2013 / All Rights Reserved
-              </p>
-            </div>
-            <div class='col-sm-6 right-col'>
-              <ul class='footer-nav'>
-                <li>
-                  <a class='scrollto' href='#home'>Top</a>
-                </li>
-                <li>
-                  <a class='scrollto' href='#services'>Label 1</a>
-                </li>
-                <li>
-                  <a class='scrollto' href='#portfolio'>Label 2</a>
-                </li>
-                <li>
-                  <a class='scrollto' href='#about'>Label 3</a>
-                </li>
-                <li>
-                  <a class='scrollto' href='#contact'>Label 4</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
     <script>
       $(document).ready(function() {
