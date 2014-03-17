@@ -23,7 +23,7 @@
       \==============================================
       CSS
       \===============================================
-    %link{href: "/stylesheets/bootstrap.css", rel: "stylesheet"}/
+
     %link{href: "/stylesheets/font-awesome.css", rel: "stylesheet"}/
     %link{href: "/stylesheets/aitu.css", rel: "stylesheet"}/    
 
@@ -32,108 +32,21 @@
       \==============================================
       Fonts
       \===============================================
-    %link{href: "http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic", rel: "stylesheet", type: "text/css"}/
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     /
 
       \==============================================
       JS
       \===============================================
-    /[if lt IE 9]
-      <script src="/javascripts/respond.min.js"></script>
-    %script{src: "/javascripts/bootstrap/modernizr.min.js", type: "text/javascript"}
-  %body{"data-offset" => "400", "data-spy" => "scroll", "data-target" => "#main-nav"}
-    / === BACKGROUND ===
-    #backgrounds{"data-backgrounds" => "/assets/back_img_1.jpg,/assets/back_img_2.jpg,/assets/back_img_3.jpg"}
-    #color-overlay
-    /
-    
-      \==============================================
-      SCRIPTS
-      \===============================================
+
+
+
     %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
-    %script{src: "/javascripts/bootstrap/bootstrap.min.js"}
-    %script{src: "/javascripts/bootstrap/jquery.scrollto.js"}
-    %script{src: "/javascripts/bootstrap/jquery.flexslider.min.js"}
-    %script{src: "/javascripts/bootstrap/twitterFetcher_v10_min.js"}
-    %script{src: "/javascripts/bootstrap/jquery.fitvids.js"}
-    %script{src: "/javascripts/bootstrap/jquery.masonry.min.js"}
-    %script{src: "/javascripts/bootstrap/waypoints.min.js"}
-    %script{src: "/javascripts/bootstrap/jquery.backstretch.min.js"}
-    %script{src: "/javascripts/bootstrap/contact.js"}
-    %script{src: "/javascripts/bootstrap/shapes.js"}
-    %script{src: "/javascripts/sugar.min.js"}
-    %script{src: "/javascripts/bootstrap/transition.js"}    
-    %script{src: "/javascripts/bootstrap/collapse.js"}
-    %script{src: "/javascripts/bootstrap/tooltip.js"}
-    %script{src: "/javascripts/bootstrap/popover.js"}        
-    %script{src: "/javascripts/bootstrap/modal.js"}
+
 
       \==============================================
       MAIN NAV
       \===============================================
   %body
-
-    #navbar
-      .container
-        .navbar-header
-          %button.navbar-toggle{"data-target" => "#site-nav", "data-toggle" => "collapse", type: "button"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          / ======= LOGO ========
-          %a.navbar-brand.scrollto{href: "#home"} Assign It To Us
-
-        #site-nav
-          %ul.nav.navbar-nav.navbar-right
-            %li.sr-only
-              %a.scrollto{href: "#home"} Top
-            %li
-              %a.scrollto{href: "#services"} Label 1
-            %li
-              %a.scrollto{href: "#portfolio"} Label 2
-            %li
-              %a.scrollto{href: "#about"} Label 3
-            %li
-              %a.scrollto{href: "#contact"} Label 4
-                                      
-
-
-                                    
-    #content
-      == {{ content }}
-    #footer
-      .container
-        .row
-          .col-sm-6.left-col
-            %p
-              %span Assign It To Us
-              \Copyright 2014 / All Rights Reserved
-          .col-sm-6.right-col
-            %ul.footer-nav
-              %li
-                %a.scrollto{href: "#home"} Top
-              %li
-                %a.scrollto{href: "#services"} Label 1
-              %li
-                %a.scrollto{href: "#portfolio"} Label 2
-              %li
-                %a.scrollto{href: "#about"} Label 3
-              %li
-                %a.scrollto{href: "#contact"} Label 4
-
-                            
-    :javascript
-      $(document).ready(function() {
-            $('.popper').popover(
-        {
-        html: true,
-        trigger: 'hover',
-        placement: 'auto'
-        
-        }
-        );
-        $('.popper').click(function(e) { e.preventDefault(); })
-      });
-
-        
+    == {{ content }}
 

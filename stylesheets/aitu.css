@@ -1,0 +1,151 @@
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+/* PAGE */
+.page {
+  margin: 0px;
+  padding: 0px;
+
+  
+}
+
+
+/* COMMON STYLES */
+
+h1, h2, h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  /* margin: 0px; */
+}
+
+
+/* MARKUP STYLES FOR CONTENT AUTHORS */
+
+span.needs-work {
+  background: yellow;
+}
+span.rewrite {
+  background: red;
+}
+
+/* Pages are 'logical' pages on the site within the single page view
+ i.e., they take up approximately one screen height of real estate
+*/
+
+
+/* FLAT UI COLORS - REPLACE THESE */
+.flat-wet-asphalt {
+  background: #34495e;
+}
+
+.flat-midnight-blue {
+  background: #2c3e50;
+}
+
+.flat-concrete {
+  background: #95a5a6;  
+  
+}
+.flat-asbestos {
+  background: #7f8c8d;  
+  
+}
+.flat-clouds {
+  background: #ecf0f1;  
+  
+}
+.flat-silver {
+  background: #bdc3c7;  
+  
+}
+.flat-wisteria {
+  background: #8e44ad;  
+  
+}
+.flat-belize-hole {
+  background: #2980b9;  
+  
+}
+.flat-nephritis {
+  background: #27ae60;  
+  
+}
+
+.flat-pomegranate {
+  background: #c0392b;  
+  
+}
+
+/* TEXT COLOR */
+
+.text-white {
+  color: white;
+}
+.text-white a, a:visited, a:hover {
+  color: white;
+}
+
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 480px) {
+.jumbotron, .call-to-action, .detail {
+  padding: 30px;
+}
+  .jumbotron h1 {
+    font-size: 24px;
+    
+    
+  }
+  .jumbotron h2, .detail h1 , .call-to-action h1, .call-to-action p {
+    font-size: 18px;
+  }  
+  .detail p {
+    font-size: 14px;
+  }         
+
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+  .jumbotron, .call-to-action, .detail {
+    padding: 40px;
+  }
+  .jumbotron h1 {
+    font-size: 36px;
+    
+    
+  }
+  .jumbotron h2, .detail h1, .call-to-action h1, .call-to-action p {
+    font-size: 24px;
+  }    
+  .detail p {
+    font-size: 18px;
+  }  
+}
+
+@media screen and (min-width: 721px) {
+  .jumbotron, .call-to-action, .detail {
+    padding: 60px;
+  }   
+  .jumbotron h1 {
+    font-size: 48px;
+    
+    
+  }
+  .jumbotron h2, .detail h1, .call-to-action h1, .call-to-action p {
+    font-size: 36px;
+  }      
+  
+  .detail p {
+    font-size: 24px;
+  }
+
+}
+
+
+
