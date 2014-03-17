@@ -52,8 +52,6 @@
       SCRIPTS
       \===============================================
     %script{src: "http://code.jquery.com/jquery-1.9.1.min.js"}
-    :javascript
-      window.jQuery || document.write('<script src="/javascripts/bootstrap/jquery-1.8.2.min.js">\x3C/script>')
     %script{src: "/javascripts/bootstrap/bootstrap.min.js"}
     %script{src: "/javascripts/bootstrap/jquery.scrollto.js"}
     %script{src: "/javascripts/bootstrap/jquery.flexslider.min.js"}
@@ -76,7 +74,7 @@
       \===============================================
   %body.page
     %div
-      #main-nav.navbar.navbar-fixed-top
+      #main-nav.navbar
         .container
           .navbar-header
             %button.navbar-toggle{"data-target" => "#site-nav", "data-toggle" => "collapse", type: "button"}
@@ -84,24 +82,23 @@
               %span.icon-bar
               %span.icon-bar
             / ======= LOGO ========
-            %a.navbar-brand.scrollto.ir-logo{href: "#home"} Assign It To Us
             %a.navbar-brand.scrollto{href: "#home"} Assign It To Us
 
           #site-nav
             %ul.nav.navbar-nav.navbar-right
               %li.sr-only
-                %a.scrollto{href: "#home"} Home
+                %a.scrollto{href: "#home"} Top
               %li
-                %a.scrollto{href: "#services"} Who We Are
+                %a.scrollto{href: "#services"} Label 1
               %li
-                %a.scrollto{href: "#portfolio"} What We Do
+                %a.scrollto{href: "#portfolio"} Label 2
               %li
-                %a.scrollto{href: "#about"} About
+                %a.scrollto{href: "#about"} Label 3
               %li
-                %a.scrollto{href: "#contact"} Contact
+                %a.scrollto{href: "#contact"} Label 4
                                         
 
-        / /.navbar-collapse              
+
                                       
       #content
         == {{ content }}
@@ -115,15 +112,15 @@
             .col-sm-6.right-col
               %ul.footer-nav
                 %li
-                  %a.scrollto{href: "#home"} Home
+                  %a.scrollto{href: "#home"} Top
                 %li
-                  %a.scrollto{href: "#services"} Who We Are
+                  %a.scrollto{href: "#services"} Label 1
                 %li
-                  %a.scrollto{href: "#portfolio"} What We Do
+                  %a.scrollto{href: "#portfolio"} Label 2
                 %li
-                  %a.scrollto{href: "#about"} About
+                  %a.scrollto{href: "#about"} Label 3
                 %li
-                  %a.scrollto{href: "#contact"} Contact
+                  %a.scrollto{href: "#contact"} Label 4
 
                             
     :javascript
