@@ -151,11 +151,19 @@ a.tip {
     font-size: 42px;
   }      
   
-  .detail p {
+  .detail p, .p {
     font-size: 24px;
   }
 
 }
 
+.tooltiptext h1 {
+  font-size: 12px;
+  font-weight: bolder;
+}
 
 
+ul.unstyled {
+  margin: 0px;
+  padding: 0px;
+}
