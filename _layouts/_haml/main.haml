@@ -57,7 +57,15 @@
              $(this).qtip({
                  content: {
                      text: $(this).next('.tooltiptext')
+                 },
+                 style: {
+                  classes: 'qtip-bootstrap'
+                 },
+                 position: {
+                  my: 'top center',
+                  at: 'bottom center'
                  }
+                 
              });
          });      
       });
