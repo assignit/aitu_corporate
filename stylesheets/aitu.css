@@ -94,12 +94,19 @@ span.rewrite {
 }
 .text-white a, a:visited, a:hover {
   color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
 }
 
 
 a.tip {
   text-decoration: none;
   border-bottom: 2px dotted white;
+}
+
+.p {
+  margin: 24px 0px;
+  
 }
 
 /* RESPONSIVE STYLES */
@@ -166,4 +173,5 @@ a.tip {
 ul.unstyled {
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
 }
