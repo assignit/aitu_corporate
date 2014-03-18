@@ -109,6 +109,10 @@ a.tip {
   
 }
 
+.detail h1 a {
+  border: none;
+}
+
 /* RESPONSIVE STYLES */
 
 @media screen and (max-width: 480px) {
