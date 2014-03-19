@@ -118,9 +118,14 @@ a.tip {
   
 }
 
-.detail h1 a {
+/* ANCHOR BOOKMARK */
+
+a.bookmark {
+  margin: 0px;
+  padding: 0px;
   border: none;
 }
+
 
 /* RESPONSIVE STYLES */
 
