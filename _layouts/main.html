@@ -79,7 +79,6 @@
             var anchor_href = $(this).attr('href')
             if (anchor_href != null) {
               if (anchor_href.substring(0,1) == '#') {
-                console.log('is anchor');
                 var href = $(this).attr('href').replace('#', '');
                 scrollToAnchor(href);
       
