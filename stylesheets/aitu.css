@@ -75,15 +75,15 @@ span.rewrite {
   
 }
 .flat-wisteria {
-  background: #8e44ad;  
+  background: #436bb9;  
   
 }
 .flat-belize-hole {
-  background: #2980b9;  
+  background: #1fa588;  
   
 }
 .flat-nephritis {
-  background: #27ae60;  
+  background: #547091;  
   
 }
 
@@ -102,7 +102,7 @@ span.rewrite {
   
 }
 .name {
-  color: #d35400;  
+  color: #e98c1a;  
 }
 .tooltiptext {
   display: none;
@@ -119,8 +119,8 @@ span.rewrite {
 }
 
 .text-white a:hover {
-  color: #d35400;   
-  border-color: #d35400;  
+  color: #e98c1a;   
+  border-color: #e98c1a;  
 }
 
 
