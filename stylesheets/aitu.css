@@ -39,6 +39,10 @@ span.rewrite {
  i.e., they take up approximately one screen height of real estate
 */
 
+.jumbotron h2 {
+    text-transform: none;
+}
+
 
 /* FLAT UI COLORS - REPLACE THESE */
 .flat-wet-asphalt {
