@@ -24,6 +24,11 @@ h1, h2, h3 {
   /* margin: 0px; */
 }
 
+img {   
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  } 
 
 /* MARKUP STYLES FOR CONTENT AUTHORS */
 
@@ -146,9 +151,6 @@ a.bookmark {
   .jumbotron img {
     width: 34px;
     height: 34px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
   }  
    
   .detail p {
@@ -171,10 +173,7 @@ a.bookmark {
   } 
   .jumbotron img {
     width: 54px;
-    height: 54px;    
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
+    height: 54px;     
   }      
   .detail p {
     font-size: 18px;
@@ -195,9 +194,6 @@ a.bookmark {
   .jumbotron img {
     width: 78px;
     height: 78px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
   }    
   
   .detail p, .p {
