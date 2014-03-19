@@ -87,16 +87,18 @@ span.rewrite {
   
 }
 
-.flat-aitu-blue {
+.aitu-blue {
   background: #34495e;  
   
 }
 
-.flat-aitu-orange {
+.aitu-orange {
   background: #d35400;  
   
 }
-
+.name {
+  color: #d35400;  
+}
 .tooltiptext {
   display: none;
 }
@@ -109,6 +111,11 @@ span.rewrite {
   color: white;
   text-decoration: none;
   border-bottom: 2px solid white;
+}
+
+.text-white a:hover {
+  color: #d35400;   
+  border-color: #d35400;  
 }
 
 
@@ -130,6 +137,9 @@ a.bookmark {
   border: none;
 }
 
+.call-to-action a {
+  text-transform: uppercase;
+}
 
 /* RESPONSIVE STYLES */
 
@@ -152,6 +162,11 @@ a.bookmark {
     width: 150px;
     height: 34px;
   }
+  
+  .call-to-action {
+    padding: 20px 30px;
+    background: #c0392b;
+  }  
 
 }
 @media screen and (min-width: 481px) and (max-width: 720px) {
@@ -173,18 +188,35 @@ a.bookmark {
     width: 240px;
     height: 54px;
   }  
+  .call-to-action {
+    padding: 30px 40px;
+    background: #d35400;
+    line-height: 1.25;
+  }  
+  
 }
 
 @media screen and (min-width: 721px) {
-  .jumbotron, .detail {
+  .jumbotron {
+    padding: 60px 60px 30px 60px;
+  }
+  .detail {
     padding: 60px;
   }   
+  
+  .detail h1:first-child {
+    margin: 28px 0px 28px 0px;
+  }
+  .detail h1 {
+    margin: -4px 0px 28px 0px;
+
+  }
   .jumbotron h1 {
     font-size: 48px;
     
     
   }
-  .jumbotron h2, .detail h1,  .call-to-action p {
+  .jumbotron h2, .detail h1 {
     font-size: 42px;
   }      
   
@@ -195,15 +227,13 @@ a.bookmark {
     width: 344px;
     height: 78px;
   }  
-  .call-to-action h1 {
-    font-size: 24px;
-  }
-  .call-to-action p {
-    font-size: 14px;
-  }
   .call-to-action {
-    padding: 30px;
+    font-size: 24px;  
+    padding: 0px 60px 60px 60px;
+    background: #34495e;
+    line-height: 1.6;    
   }
+  
 }
 
 .tooltiptext h1 {
