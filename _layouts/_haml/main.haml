@@ -52,7 +52,14 @@
   %body
     == {{ content }}
     :javascript
+      function scrollToAnchor(aid){
+              var aTag = $("a[name='"+ aid +"']");
+              $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+      }    
       $(document).ready(function () {
+      
+      
+      
          $('a.tip').each(function() {
              $(this).qtip({
                  content: {
@@ -71,5 +78,16 @@
                  
              });
          });      
+         
+          $("a").click(function() {
+            console.log('click');
+            if ($(this).attr('href') != null) {
+              console.log('is anchor');
+              var href = $(this).attr('href').replace('#', '');
+              scrollToAnchor(href);
+            }
+          });           
+       
+         
       });
       
