@@ -176,7 +176,7 @@ a.bookmark {
 }
 
 @media screen and (min-width: 721px) {
-  .jumbotron, .call-to-action, .detail {
+  .jumbotron, .detail {
     padding: 60px;
   }   
   .jumbotron h1 {
@@ -184,7 +184,7 @@ a.bookmark {
     
     
   }
-  .jumbotron h2, .detail h1, .call-to-action h1, .call-to-action p {
+  .jumbotron h2, .detail h1,  .call-to-action p {
     font-size: 42px;
   }      
   
@@ -195,7 +195,15 @@ a.bookmark {
     width: 344px;
     height: 78px;
   }  
-
+  .call-to-action h1 {
+    font-size: 24px;
+  }
+  .call-to-action p {
+    font-size: 14px;
+  }
+  .call-to-action {
+    padding: 30px;
+  }
 }
 
 .tooltiptext h1 {
