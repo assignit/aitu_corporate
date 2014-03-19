@@ -80,11 +80,13 @@
          });      
          
           $("a").click(function() {
-            console.log('click');
-            if ($(this).attr('href') != null) {
-              console.log('is anchor');
-              var href = $(this).attr('href').replace('#', '');
-              scrollToAnchor(href);
+            var anchor_href = $(this).attr('href')
+            if (anchor_href != null) {
+              if (anchor_href.substring(0,1) == '#') {
+                var href = $(this).attr('href').replace('#', '');
+                scrollToAnchor(href);
+
+              }
             }
           });           
        
