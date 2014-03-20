@@ -146,10 +146,15 @@ a.bookmark {
 
 /* RESPONSIVE STYLES */
 
+/* SMALL */
 @media screen and (max-width: 480px) {
-.jumbotron, .call-to-action, .detail {
-  padding: 30px;
-}
+  .jumbotron {
+    padding: 30px 30px 2px 30px;    
+  }
+  
+  .call-to-action, .detail {
+    padding: 30px;
+  }
   .jumbotron h1 {
     font-size: 24px;  
   }
@@ -161,22 +166,35 @@ a.bookmark {
     height: 34px;
   }  
    
-  .detail p {
-    font-size: 14px;
+  .detail p, .p,  {
+    font-size: 18px;
   }         
 
+  .call-to-action p {
+    font-size: 14px;
+    line-height: 1.5;    
+  }
   .jumbotron img {
 
   }
   
   .call-to-action {
-    padding: 20px 30px;
-    background: #c0392b;
+    padding: 0px 30px 40px 30px;
+    background: #34495e;
   }  
-
+  .call-to-action a {
+    border-width: 1px;
+  }
 }
+
+/* MEDIUM SIZE */
 @media screen and (min-width: 481px) and (max-width: 720px) {
-  .jumbotron, .call-to-action, .detail {
+
+  .jumbotron {
+    padding: 40px 40px 2px 40px;
+  }
+
+  .detail {
     padding: 40px;
   }
   .jumbotron h1 {
@@ -191,15 +209,22 @@ a.bookmark {
     width: 54px;
     height: 54px;  
   }      
-  .detail p {
+  .call-to-action p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .detail p, .p {
     font-size: 18px;
   }  
 
   .call-to-action {
-    padding: 30px 40px;
-    background: #d35400;
+    padding: 0px 40px 40px 40px;
+    background: #34495e;
     line-height: 1.25;
   }  
+  .call-to-action a {
+    border-width: 1px;
+  }
   
 }
 
@@ -229,14 +254,13 @@ a.bookmark {
     height: 100px;
   }    
   
-  .detail p, .p {
+  .detail p, .p, .call-to-action p {
     font-size: 24px;
   }
 
 
 
   .call-to-action {
-    font-size: 24px;  
     padding: 0px 60px 60px 60px;
     background: #34495e;
     line-height: 1.6;    
